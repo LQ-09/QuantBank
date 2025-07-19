@@ -1,42 +1,257 @@
 [
     {
-        "title": "B1",
-        "source": "",
-        "tags": [
-            "Brain Teaser"
-        ],
-        "description": "BLABL",
-        "notes": "WQEQS",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "id": 1
-    },
-    {
-        "title": "212312",
-        "source": "",
+        "id": 101,
+        "title": "Rock Climber Jumps",
+        "source": "Citadel",
         "tags": [
             "Probability"
         ],
-        "description": "wqewqqq",
-        "notes": "KSWEWQ",
+        "description": "A rock climber is attempting to scale a wall. She can jump to the first foothold 3/4 of the time and then jump to the top of the wall 1/3 of the time. If she falls at any point, she falls to the bottom and must retry from the first foothold. What is the total expected number of jumps she will make to reach the top of the wall?",
         "is_programming": false,
         "python_solution": "",
         "cpp_solution": "",
-        "id": 2
+        "answer": "7",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
     },
     {
-        "title": "wqeqweqw",
-        "source": "Optiver",
+        "id": 102,
+        "title": "First to Three Tournament",
+        "source": "Citadel",
         "tags": [
-            "Coding"
+            "Probability"
         ],
-        "description": "232131",
-        "notes": "weqsdad",
-        "is_programming": true,
-        "python_solution": "weqewqeqw",
+        "description": "Two teams are playing a 'first to three wins' tournament; that is, they will play games until one team has won three games. Each game independently has a 1/2 chance of being won by either team. What is the expected difference in the number of games won by the overall tournament winner and the overall tournament loser?",
+        "is_programming": false,
+        "python_solution": "",
         "cpp_solution": "",
-        "answer": "",
-        "id": 3
+        "answer": "15/8",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 103,
+        "title": "Egg Breakfast Stretch",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "Every day for one week, Taylor independently decides to have either eggs or yogurt for breakfast with equal probability. What is the probability that there is a stretch of at least five days where they only eat eggs?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "3/64",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 104,
+        "title": "Sock Drawer Pairs",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "A sock drawer has 5 black and 5 white socks. James removes four socks from the drawer. What is the probability that he can make two pairs of same-colored socks?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "11/21",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 105,
+        "title": "Adjacent Patty Pairs",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "Charlie has 6 hamburger patties and 5 veggie burger patties. To make a massive burger, he stacks all the patties randomly into one burger. What is the expected number of adjacent pairs of patties that are made of the same product?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "50/11",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 106,
+        "title": "Yellow and Green Buses",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "A town has yellow and green buses. The yellow buses are late 1/6 of the time while the green buses are late 1/8 of the time. Sophie gets on a bus randomly and is late. If the probability that she rode a green bus is 1/3, what is the ratio of yellow to green buses in the town?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "3/2",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 107,
+        "title": "Taking Candy Bags",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "There are several bags containing 2, 3, 4, 5, and 6 candies. For each bag, Charlie independently decides to either take or not take the bag, with equal probability. What is the probability that Charlie takes at least half of the total candies available?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "17/32",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 108,
+        "title": "Tourist Island Median",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "Three tourists visit one of three islands, chosen independently and randomly. What is the expected median of the number of tourists across the three islands?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "8/9",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 109,
+        "title": "Gym on a Random Day",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "James goes to the gym every Monday and Tuesday. On every other day of the week, he independently has a 30% chance of going to the gym. On a random day, James is spotted at the gym. What is the probability it is Monday?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "2/7",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 110,
+        "title": "Average Walking Time StdDev",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "In a neighborhood of 100 people, each person independently spends an average of 45 minutes walking per week, with a standard deviation of 40 minutes. What is the standard deviation of the average number of minutes walked in the neighborhood?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "4",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 111,
+        "title": "Random Numbers Difference",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "X and Y are random real numbers independently and uniformly picked between 0 and 100. What is the probability that X and Y differ by at least 50 and at most 80?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "21/100",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 112,
+        "title": "Shuffled Numbered Cards",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "Fatima has 5 cards, numbered from 1 to 5. She shuffles the deck and notices that the first two cards differ by 1. What is the probability the second card is a 2?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "1/4",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 113,
+        "title": "Unfair Coin Flips",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "You have an unfair coin that lands on heads 1/6 of the time, whereas your opponent has an unfair coin that lands on heads 1/3 of the time. You alternate flipping your respective coin until one lands on heads. If you are going first, what is the probability you get heads before your opponent?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "3/8",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 114,
+        "title": "Friends Ordering Entrees",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "A group of five friends goes to a restaurant with 5 entrees on the menu. If each friend randomly picks an entree to order, what is the probability that they either all order different dishes or they all order the same dish?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "1/25",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
+    },
+    {
+        "id": 115,
+        "title": "Expected Value of B",
+        "source": "Citadel",
+        "tags": [
+            "Probability"
+        ],
+        "description": "The random variable A is uniformly picked between 2 and 3. The random variable B is uniformly picked between 4 and A^2. What is the expected value of B?",
+        "is_programming": false,
+        "python_solution": "",
+        "cpp_solution": "",
+        "answer": "31/6",
+        "notes": "",
+        "attempts": 0,
+        "correct": 0,
+        "is_saved": false
     }
 ]
