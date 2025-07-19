@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+/dist/
+/build/
+*.spec
+
+# IDE / Editor specific files
+.vscode/
+.idea/
