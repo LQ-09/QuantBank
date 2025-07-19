@@ -1,6 +1,5 @@
 # main.py
 
-
 # 打包指令
 # pyinstaller --distpath "./output/dist" --workpath "./output/build" QuantApp.spec
 
@@ -17,7 +16,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Quant 面试题库')
-        self.setGeometry(100, 100, 1200, 800)
+        self.setGeometry(100, 100, 900, 700)
 
         self.stacked_widget = QStackedWidget()
         self.setCentralWidget(self.stacked_widget)

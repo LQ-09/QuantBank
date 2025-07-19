@@ -1,0 +1,164 @@
+[
+    {
+        "timestamp": "2025-07-19T14:04:08.406957",
+        "level_id": "M08",
+        "difficulty": "medium",
+        "time_taken": 4.14,
+        "moves_taken": 3,
+        "optimal_moves": 7,
+        "score": 6391
+    },
+    {
+        "timestamp": "2025-07-19T14:05:37.331783",
+        "level_id": "H02",
+        "difficulty": "hard",
+        "time_taken": 13.2,
+        "moves_taken": 8,
+        "optimal_moves": 15,
+        "score": 9843
+    },
+    {
+        "timestamp": "2025-07-19T14:08:52.940751",
+        "level_id": "M06",
+        "difficulty": "medium",
+        "time_taken": 8.88,
+        "moves_taken": 8,
+        "optimal_moves": 9,
+        "score": 3323
+    },
+    {
+        "timestamp": "2025-07-19T14:09:09.756258",
+        "level_id": "H01",
+        "difficulty": "hard",
+        "time_taken": 13.47,
+        "moves_taken": 10,
+        "optimal_moves": 20,
+        "score": 10465
+    },
+    {
+        "timestamp": "2025-07-19T14:10:20.916374",
+        "level_id": "M05",
+        "difficulty": "medium",
+        "time_taken": 8.66,
+        "moves_taken": 6,
+        "optimal_moves": 10,
+        "score": 4680
+    },
+    {
+        "timestamp": "2025-07-19T14:10:32.174246",
+        "level_id": "H02",
+        "difficulty": "hard",
+        "time_taken": 8.68,
+        "moves_taken": 8,
+        "optimal_moves": 15,
+        "score": 9888
+    },
+    {
+        "timestamp": "2025-07-19T14:10:39.108387",
+        "level_id": "M04",
+        "difficulty": "medium",
+        "time_taken": 6.0,
+        "moves_taken": 5,
+        "optimal_moves": 8,
+        "score": 4539
+    },
+    {
+        "timestamp": "2025-07-19T14:12:51.463538",
+        "level_id": "M03",
+        "difficulty": "medium",
+        "time_taken": 4.77,
+        "moves_taken": 5,
+        "optimal_moves": 8,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:15:55.845809",
+        "level_id": "M10",
+        "difficulty": "medium",
+        "time_taken": 5.91,
+        "moves_taken": 5,
+        "optimal_moves": 8,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:19:04.891470",
+        "level_id": "M04",
+        "difficulty": "medium",
+        "time_taken": 5.71,
+        "moves_taken": 3,
+        "optimal_moves": 7,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:25:33.224093",
+        "level_id": "M03",
+        "difficulty": "medium",
+        "time_taken": 10.77,
+        "moves_taken": 7,
+        "optimal_moves": 9,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:27:41.820812",
+        "level_id": "M03",
+        "difficulty": "medium",
+        "time_taken": 8.65,
+        "moves_taken": 7,
+        "optimal_moves": 9,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:31:23.668933",
+        "level_id": "M02",
+        "difficulty": "medium",
+        "time_taken": 5.09,
+        "moves_taken": 4,
+        "optimal_moves": 7,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:31:37.561346",
+        "level_id": "H02",
+        "difficulty": "hard",
+        "time_taken": 13.88,
+        "moves_taken": 8,
+        "optimal_moves": 15,
+        "score": 500
+    },
+    {
+        "timestamp": "2025-07-19T14:31:42.031182",
+        "level_id": "M02",
+        "difficulty": "medium",
+        "time_taken": 4.46,
+        "moves_taken": 3,
+        "optimal_moves": 7,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:32:15.321179",
+        "level_id": "H04",
+        "difficulty": "hard",
+        "time_taken": "skipped",
+        "moves_taken": 14,
+        "optimal_moves": 10,
+        "score": 0
+    },
+    {
+        "timestamp": "2025-07-19T14:32:19.677459",
+        "level_id": "M02",
+        "difficulty": "medium",
+        "time_taken": 4.35,
+        "moves_taken": 3,
+        "optimal_moves": 7,
+        "score": 300
+    },
+    {
+        "timestamp": "2025-07-19T14:32:45.948257",
+        "level_id": "H05",
+        "difficulty": "hard",
+        "time_taken": "skipped",
+        "moves_taken": 2,
+        "optimal_moves": 24,
+        "score": 0
+    }
+]
