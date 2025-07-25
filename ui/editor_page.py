@@ -9,6 +9,22 @@ from PyQt6.QtWidgets import (
 )
 from logic.data_manager import load_problems, save_problems, toggle_problem_saved_status
 import re
+import html
+
+def natural_sort_key(problem):
+    """为列表排序生成一个“自然排序”的键"""
+    title = problem.get('title', '').lower()
+    # 使用正则表达式尝试从标题末尾匹配 '#数字' 模式
+    match = re.search(r'#(\d+)$', title)
+    if match:
+        # 如果匹配成功，返回一个元组 (文本部分, 数字部分)
+        # 比如 "coin problem #10" -> ("coin problem #", 10)
+        number = int(match.group(1))
+        text_part = title[:match.start()]
+        return (text_part, number)
+    else:
+        # 如果不匹配，返回 (标题, 0) 以便和其他项一起排序
+        return (title, 0)
 
 def format_text_for_display(text):
     """一个辅助函数，用于将简单的标记转换为HTML富文本"""
@@ -22,8 +38,39 @@ def format_text_for_display(text):
     formatted_text = re.sub(r'(\w+)_([\w\d]+)', r'\1<sub>\2</sub>', formatted_text)
     return formatted_text
 
+def display_problem_details(self, item):
+    problem_id = item.data(Qt.ItemDataRle.UserRole)
+    problem = next((p for p in self.problems if p['id'] == problem_id), None)
+    if not problem: self.details_area.setText("未找到题目详情。"); return
+    
+    # ... (获取统计数据的代码和之前一样) ...
+    attempts = problem.get("attempts", 0); correct = problem.get("correct", 0)
+    accuracy = f"{(correct / attempts * 100):.1f}%" if attempts > 0 else "N/A"
+    is_saved = problem.get("is_saved", False); is_completed = correct > 0
+    status_text = f"✅ 已完成" if is_completed else "❌ 未完成"; saved_text = "❤️ 已收藏" if is_saved else "🤍 未收藏"
+    is_programming = problem.get("is_programming", False)
+    
+    # --- 【核心改动】在放入HTML前，对所有数据进行转义 ---
+    title = html.escape(problem.get('title', ''))
+    company = html.escape(problem.get('source', ''))
+    tags = html.escape(', '.join(problem.get('tags', [])))
+    description = html.escape(problem.get('description', '')).replace('\n', '<br>')
+    
+    html_content = f"""<h3>{title}</h3><p><b>公司:</b> {company}</p><p><b>标签:</b> {tags}</p><p><b>状态:</b> {status_text} | {saved_text} | <b>正确率:</b> {accuracy} ({correct}/{attempts})</p><hr><h3>描述</h3><p>{description}</p>"""
+    
+    if is_programming:
+        # 代码部分不需要转义，<pre>标签会保留其格式
+        py_solution = problem.get('python_solution', '')
+        cpp_solution = problem.get('cpp_solution', '')
+        html_content += f"""<hr><h3>Python 解法</h3><pre><code>{html.escape(py_solution)}</code></pre><hr><h3>C++ 解法</h3><pre><code>{html.escape(cpp_solution)}</code></pre>"""
+    else:
+        answer = html.escape(problem.get('answer', '')).replace('\n', '<br>')
+        html_content += f"""<hr><h3>答案与解析</h3><p>{answer}</p>"""
+        
+    notes = html.escape(problem.get('notes', '')).replace('\n', '<br>')
+    html_content += f"""<hr><h3>备注</h3><p>{notes}</p>"""
+    self.details_area.setHtml(html_content)
 
-# ... PREDEFINED_TAGS 和 AddProblemDialog 类的代码和之前完全一样 ...
 PREDEFINED_TAGS = ["", "Math", "Probability", "Coding", "Finance", "Brain Teaser"]
 class AddProblemDialog(QDialog):
 
@@ -84,7 +131,6 @@ class AddProblemDialog(QDialog):
         self.code_label.setVisible(is_coding); self.language_selector.setVisible(is_coding); self.code_input_area.setVisible(is_coding)
         self.answer_label.setVisible(not is_coding); self.answer_input.setVisible(not is_coding)
 
-
 class EditorPage(QWidget):
     navigateToWelcome = pyqtSignal()
     def __init__(self): super().__init__(); self.problems = []; self.initUI()
@@ -99,11 +145,11 @@ class EditorPage(QWidget):
         self.delete_button = QPushButton("删除")
         self.save_button = QPushButton("收藏/取消收藏")
         
-        # 【新增】排序和筛选控件
         self.sort_label = QLabel("排序:")
         self.sort_combo = QComboBox()
+        # --- 【核心改动】确保“按字母排序”是第一个选项 ---
         self.sort_combo.addItems([
-            "默认排序 (ID)",
+            "按字母排序 (A-Z)",
             "正确率 (从低到高)",
             "错误次数 (从多到少)",
             "总次数 (从多到少)"
@@ -111,7 +157,6 @@ class EditorPage(QWidget):
 
         self.filter_label = QLabel("筛选:")
         self.filter_combo = QComboBox()
-        # 我们稍后会动态填充公司列表
         
         self.back_button = QPushButton("返回主菜单")
 
@@ -128,7 +173,6 @@ class EditorPage(QWidget):
         controls_layout.addWidget(self.back_button)
         main_layout.addLayout(controls_layout)
         
-        # ... (Splitter 和 ListWidget 的创建和之前一样) ...
         splitter = QSplitter(Qt.Orientation.Horizontal)
         self.problem_list_widget = QListWidget()
         self.details_area = QTextEdit(); self.details_area.setReadOnly(True)
@@ -143,10 +187,9 @@ class EditorPage(QWidget):
         self.save_button.clicked.connect(self.toggle_save_status)
         self.back_button.clicked.connect(self.navigateToWelcome.emit)
         
-        # 【新增】连接排序和筛选下拉框的信号
         self.sort_combo.currentIndexChanged.connect(self._refresh_problem_list)
         self.filter_combo.currentIndexChanged.connect(self._refresh_problem_list)
-    
+
     def _validate_and_save_data(self, data, problem_id=None):
         if not data['title']:
             QMessageBox.warning(self, "错误", "标题不能为空！"); return False
@@ -225,7 +268,7 @@ class EditorPage(QWidget):
     def load_and_display_problems(self):
         self.problems = load_problems()
         
-        # 【新增】动态更新公司筛选列表
+        # 动态更新公司筛选列表
         # 先断开信号，避免填充时触发刷新
         self.filter_combo.blockSignals(True)
         current_filter = self.filter_combo.currentText()
@@ -251,42 +294,37 @@ class EditorPage(QWidget):
         self._refresh_problem_list()
 
     def display_problem_details(self, item):
-        """显示题目详情时，使用新的格式化函数"""
         problem_id = item.data(Qt.ItemDataRole.UserRole)
         problem = next((p for p in self.problems if p['id'] == problem_id), None)
-        if not problem:
-            self.details_area.setText("未找到题目详情。")
-            return
+        if not problem: self.details_area.setText("未找到题目详情。"); return
         
-        # ... (获取统计数据的代码和之前一样) ...
         attempts = problem.get("attempts", 0); correct = problem.get("correct", 0)
         accuracy = f"{(correct / attempts * 100):.1f}%" if attempts > 0 else "N/A"
         is_saved = problem.get("is_saved", False); is_completed = correct > 0
         status_text = f"✅ 已完成" if is_completed else "❌ 未完成"; saved_text = "❤️ 已收藏" if is_saved else "🤍 未收藏"
         is_programming = problem.get("is_programming", False)
-
-        # 【核心改动】所有显示的文本都经过新函数格式化
-        title_html = format_text_for_display(problem.get('title', ''))
-        company_html = format_text_for_display(problem.get('source', ''))
-        tags_html = format_text_for_display(', '.join(problem.get('tags', [])))
-        desc_html = format_text_for_display(problem.get('description', ''))
         
-        html_content = f"""<h1>{title_html}</h1><p><b>公司:</b> {company_html}</p><p><b>标签:</b> {tags_html}</p><p><b>状态:</b> {status_text} | {saved_text} | <b>正确率:</b> {accuracy} ({correct}/{attempts})</p><hr><h3>描述</h3><p>{desc_html}</p>"""
+        # --- 【核心改动】对所有从json读取的数据进行转义 ---
+        title = html.escape(problem.get('title', ''))
+        company = html.escape(problem.get('source', ''))
+        tags = html.escape(', '.join(problem.get('tags', [])))
+        description = html.escape(problem.get('description', '')).replace('\n', '<br>')
+        
+        # --- 【核心改动】将 <h1> 换成 <h3> ---
+        html_content = f"""<h3>{title}</h3><p><b>公司:</b> {company}</p><p><b>标签:</b> {tags}</p><p><b>状态:</b> {status_text} | {saved_text} | <b>正确率:</b> {accuracy} ({correct}/{attempts})</p><hr><h3>描述</h3><p>{description}</p>"""
         
         if is_programming:
-            # 代码部分我们通常希望保持原样，所以用<pre><code>包裹，不使用格式化函数
             py_solution = problem.get('python_solution', '')
             cpp_solution = problem.get('cpp_solution', '')
-            html_content += f"""<hr><h3>Python 解法</h3><pre><code>{py_solution}</code></pre><hr><h3>C++ 解法</h3><pre><code>{cpp_solution}</code></pre>"""
+            html_content += f"""<hr><h3>Python 解法</h3><pre><code>{html.escape(py_solution)}</code></pre><hr><h3>C++ 解法</h3><pre><code>{html.escape(cpp_solution)}</code></pre>"""
         else:
-            answer_html = format_text_for_display(problem.get('answer', ''))
-            html_content += f"""<hr><h3>答案与解析</h3><p>{answer_html}</p>"""
-
-        notes_html = format_text_for_display(problem.get('notes', ''))
-        html_content += f"""<hr><h3>备注</h3><p>{notes_html}</p>"""
-        
+            answer = html.escape(problem.get('answer', '')).replace('\n', '<br>')
+            html_content += f"""<hr><h3>答案与解析</h3><p>{answer}</p>"""
+            
+        notes = html.escape(problem.get('notes', '')).replace('\n', '<br>')
+        html_content += f"""<hr><h3>备注</h3><p>{notes}</p>"""
         self.details_area.setHtml(html_content)
-    
+
     def delete_selected_problem(self):
         selected_items = self.problem_list_widget.selectedItems();
         if not selected_items: QMessageBox.information(self, "提示", "请先在左侧列表中选择一个要删除的题目。"); return
@@ -298,41 +336,44 @@ class EditorPage(QWidget):
 
     def _refresh_problem_list(self):
         """核心函数：根据当前的排序和筛选条件，刷新问题列表"""
-        # --- 1. 获取当前的筛选和排序选择 ---
         filter_text = self.filter_combo.currentText()
         sort_text = self.sort_combo.currentText()
         
-        # --- 2. 应用筛选 ---
-        display_list = self.problems.copy() # 从完整的题目列表中开始
+        display_list = self.problems.copy()
 
+        # --- 筛选逻辑 (不变) ---
         if filter_text == "只显示收藏的":
             display_list = [p for p in display_list if p.get('is_saved', False)]
         elif filter_text == "只显示未完成的":
             display_list = [p for p in display_list if p.get('correct', 0) == 0]
         elif filter_text not in ["显示全部", ""]:
-            # 这意味着我们正在按公司筛选
             display_list = [p for p in display_list if p.get('source', '') == filter_text]
             
-        # --- 3. 应用排序 ---
+        # --- 排序逻辑 ---
         if sort_text == "正确率 (从低到高)":
             def sort_key(p):
                 attempts = p.get('attempts', 0)
-                # 从未做过的题目正确率视为100% (即1.0)，排在最后
                 return p.get('correct', 0) / attempts if attempts > 0 else 1.0
             display_list.sort(key=sort_key)
         elif sort_text == "错误次数 (从多到少)":
-            # 错误次数 = 总次数 - 正确次数
             display_list.sort(key=lambda p: p.get('attempts', 0) - p.get('correct', 0), reverse=True)
         elif sort_text == "总次数 (从多到少)":
             display_list.sort(key=lambda p: p.get('attempts', 0), reverse=True)
-        else: # 默认按ID排序
-            display_list.sort(key=lambda p: p.get('id', 0))
+        else: # 默认的 "按字母排序 (A-Z)"
+            # --- 【核心改动】使用新的自然排序函数 ---
+            display_list.sort(key=natural_sort_key)
 
-        # --- 4. 刷新UI列表 ---
+        # --- 刷新UI列表的逻辑 (不变) ---
         self.problem_list_widget.clear()
         for p in display_list:
-            item = QListWidgetItem(p['title'])
+            item = QListWidgetItem() 
             item.setData(Qt.ItemDataRole.UserRole, p['id'])
+            label = QLabel()
+            escaped_title = html.escape(p['title'])
             if p.get('is_saved', False):
-                item.setText(f"❤️ {p['title']}")
+                label.setText(f"❤️ {escaped_title}")
+            else:
+                label.setText(escaped_title)
             self.problem_list_widget.addItem(item)
+            self.problem_list_widget.setItemWidget(item, label)
+

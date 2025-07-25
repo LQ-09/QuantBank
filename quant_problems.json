@@ -3,255 +3,567 @@
         "id": 101,
         "title": "Rock Climber Jumps",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "A rock climber is attempting to scale a wall. She can jump to the first foothold 3/4 of the time and then jump to the top of the wall 1/3 of the time. If she falls at any point, she falls to the bottom and must retry from the first foothold. What is the total expected number of jumps she will make to reach the top of the wall?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "7",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "7",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 102,
         "title": "First to Three Tournament",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "Two teams are playing a 'first to three wins' tournament; that is, they will play games until one team has won three games. Each game independently has a 1/2 chance of being won by either team. What is the expected difference in the number of games won by the overall tournament winner and the overall tournament loser?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "15/8",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "15/8",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 103,
         "title": "Egg Breakfast Stretch",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "Every day for one week, Taylor independently decides to have either eggs or yogurt for breakfast with equal probability. What is the probability that there is a stretch of at least five days where they only eat eggs?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "3/64",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "3/64",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 104,
         "title": "Sock Drawer Pairs",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "A sock drawer has 5 black and 5 white socks. James removes four socks from the drawer. What is the probability that he can make two pairs of same-colored socks?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "11/21",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "11/21",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 105,
         "title": "Adjacent Patty Pairs",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "Charlie has 6 hamburger patties and 5 veggie burger patties. To make a massive burger, he stacks all the patties randomly into one burger. What is the expected number of adjacent pairs of patties that are made of the same product?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "50/11",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "50/11",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 106,
         "title": "Yellow and Green Buses",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "A town has yellow and green buses. The yellow buses are late 1/6 of the time while the green buses are late 1/8 of the time. Sophie gets on a bus randomly and is late. If the probability that she rode a green bus is 1/3, what is the ratio of yellow to green buses in the town?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "3/2",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "3/2",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 107,
         "title": "Taking Candy Bags",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "There are several bags containing 2, 3, 4, 5, and 6 candies. For each bag, Charlie independently decides to either take or not take the bag, with equal probability. What is the probability that Charlie takes at least half of the total candies available?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "17/32",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "17/32",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 108,
         "title": "Tourist Island Median",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "Three tourists visit one of three islands, chosen independently and randomly. What is the expected median of the number of tourists across the three islands?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "8/9",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "8/9",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 109,
         "title": "Gym on a Random Day",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "James goes to the gym every Monday and Tuesday. On every other day of the week, he independently has a 30% chance of going to the gym. On a random day, James is spotted at the gym. What is the probability it is Monday?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "2/7",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "2/7",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 110,
         "title": "Average Walking Time StdDev",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "In a neighborhood of 100 people, each person independently spends an average of 45 minutes walking per week, with a standard deviation of 40 minutes. What is the standard deviation of the average number of minutes walked in the neighborhood?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "4",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "4",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 111,
         "title": "Random Numbers Difference",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "X and Y are random real numbers independently and uniformly picked between 0 and 100. What is the probability that X and Y differ by at least 50 and at most 80?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "21/100",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "21/100",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 112,
-        "title": "Shuffled Numbered Cards",
-        "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "title": "Card Problem #1",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
         "description": "Fatima has 5 cards, numbered from 1 to 5. She shuffles the deck and notices that the first two cards differ by 1. What is the probability the second card is a 2?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "1/4",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1/4",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 113,
-        "title": "Unfair Coin Flips",
-        "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "title": "Coin Problem #1",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
         "description": "You have an unfair coin that lands on heads 1/6 of the time, whereas your opponent has an unfair coin that lands on heads 1/3 of the time. You alternate flipping your respective coin until one lands on heads. If you are going first, what is the probability you get heads before your opponent?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "3/8",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "3/8",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 114,
         "title": "Friends Ordering Entrees",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "A group of five friends goes to a restaurant with 5 entrees on the menu. If each friend randomly picks an entree to order, what is the probability that they either all order different dishes or they all order the same dish?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "1/25",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1/25",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     },
     {
         "id": 115,
         "title": "Expected Value of B",
         "source": "Citadel",
-        "tags": [
-            "Probability"
-        ],
+        "tags": [ "Probability" ],
         "description": "The random variable A is uniformly picked between 2 and 3. The random variable B is uniformly picked between 4 and A^2. What is the expected value of B?",
-        "is_programming": false,
-        "python_solution": "",
-        "cpp_solution": "",
-        "answer": "31/6",
-        "notes": "",
-        "attempts": 0,
-        "correct": 0,
-        "is_saved": false
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "31/6",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 116,
+        "title": "Coin Problem #2",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You flip a coin 3 times. What is the probability that the outcome is the same for all flips? So all Heads or all Tails.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.25",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 117,
+        "title": "Card Problem #2",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "Take a shuffled deck of 52 playing cards and throw the first top 10 cards in the bin. What is the probability that the new top card is red?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.5",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 118,
+        "title": "Coin Problem #3",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You keep flipping a coin and whilst you do this you keep track of the number of Heads and the number of Tails. You can think of this as a race between Heads and Tails. For example, if after 9 flips you have landed on Heads 7 times and Tails 2 times, then Heads is winning the race by 5. Now consider a race of 3 flips. What is the probability that the side you flip first will be winning the race?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.75",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 119,
+        "title": "Coin Problem #4",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "61 coins are randomly put into 15 boxes. If any of these boxes contains more than 4 coins, you win a prize. What is the probability that you win a prize?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 120,
+        "title": "Coin Problem #5",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "A student leaves University (U) to walk home (H). It is a distance of four blocks in a straight line. At each crossing, they toss a coin deciding whether to move forwards (Heads) or backwards (Tails). Note that from U they cannot go backwards in which case they stay there if they throw Tails. If it takes 10 minutes to walk each block, what is the probability they will be home in less than 45 minutes?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.0625",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 121,
+        "title": "Dice Problem #1",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You roll five dice and sum their values. What is the probability that the sum is an even number?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.5",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 122,
+        "title": "Dice Problem #2",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You roll four dice and take the sum of the three lowest values. What is the probability that this sum is equal to 3?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "21/1296",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 123,
+        "title": "Coin Problem #6",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "A Stock is currently worth $100. Each day, a coin is flipped. If coin lands on Heads, the stock price increases by $1. If it lands on Tails, the stock price decreases by $1. What is the probability that after 10 days, the stock is worth exactly $100?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "252/1024",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 124,
+        "title": "Dice Problem #3",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "On average, how many times must a dice be rolled until all sides have appeared at least once?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "14.7",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 125,
+        "title": "Grid Walk Collision",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "Two people start at opposite corners of a 4x4 grid. Person A starts on the bottom left node. Person B starts on the top right node. Every second, Person A will randomly move either one edge to the right, or one edge up. At the same time, Person B will randomly move either one edge to the left, or one edge down. Each person must always move each second, for example, if Person A cannot move right anymore, they must move up. What is the probability that A and B share the same position at some point?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "70/256",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 126,
+        "title": "Knockout Tournament Seeding",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "There are 32 teams in a traditional knockout tournament. Each of these 32 teams are of a different quality and can be distinctly ranked from 1st to 32nd in terms of ability. Assume that a higher-ability team always beats a lower-ability team. The teams are randomly seeded in the schedule of this knockout tournament. What is the probability that the grand final consists of the best team playing the third best team?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "8/31",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 127,
+        "title": "Card Problem #3",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "Consider a shuffled deck of 52 cards. How many cards on average do you need to draw before you draw a King?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "13",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 128,
+        "title": "Coin Problem #7",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You play a game with a biased coin where there is a 40% chance of Heads and 60% chance of Tails. You may place a bet; if Heads is flipped then you receive your bet back plus the same in winnings. If Tails is flipped then you lose your bet. You have $10 and you want to turn this into $20 by continuously betting $1 at a time, walking away when you either have a total of $20 or are bankrupt. What is the probability?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.01704",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 129,
+        "title": "Coin Problem #8",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "Consider a simple coin game where you can bet any amount of money. If it lands on Heads you double your bet; if it lands on Tails you lose your bet. Consider a strategy where you start by betting $1. If you lose, you will bet $2. If you lose again, you will bet $4. If you lose again, you will bet $8, and so on in this way until you finally win a toss. Once you have won a toss, your strategy has been implemented, and you stop. If you have a total bankroll of $63 available to implement this strategy, what is your expected profit?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 130,
+        "title": "Expected Children (Equal Boys/Girls)",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "A couple decide to start having children and keep having children until they have the same number of boys and girls. How many children do they expect to have?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "Infinite",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 131,
+        "title": "Coin Problem #9",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You will play a coin game against an opponent. A biased coin will be continually flipped where there is a 2/3 chance of Heads and a 1/3 chance of Tails. If Heads is flipped then you receive $1 from your opponent. If Tails is flipped then you pay $1 to your opponent. You start with $1 and your opponent starts with $2. You keep playing until one of you is bankrupt (= has $0 left); they will be declared the loser, the other will be declared the winner. What is the probability that you win?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "4/7",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 132,
+        "title": "Dice Problem #4",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You throw two dice. What is the probability that the two dice add up to 11 or 12?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "3/36",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 133,
+        "title": "Dice Problem #5",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You throw one dice two times. What is the probability that the 2nd throw has the same face value as the first throw?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1/6",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 134,
+        "title": "Dice Problem #6",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You roll four dice and sum their values. What is the probability that the sum is an odd number?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.5",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 135,
+        "title": "Dice Problem #7",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You roll four dice and take the sum of the three highest values. What is the probability that this sum is equal to 18?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "21/1296",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 136,
+        "title": "Expected Children (More Girls)",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "A couple decide to start having children and keep having children until they have more girls than boys (note that this means they stop having children if their first child is a girl). How many children do they expect to have?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "2",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 137,
+        "title": "Dice Problem #8",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You throw one dice two times. What is the probability that the 2nd throw has a different face value than the first throw?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "5/6",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 138,
+        "title": "Dice Problem #9",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You throw two dice. What is the probability that the two dice add up to exactly 7?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1/6",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 139,
+        "title": "Coin Problem #10",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "A student leaves University (U) to walk home (H). It is a distance of four blocks in a straight line. At each crossing, they toss a coin deciding whether to move forwards (Heads) or backwards (Tails). Note that from U they cannot go backwards in which case they stay there if they throw Tails. If it takes 7 minutes to walk each block, what is the probability they will be home in more than 30 minutes?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "15/16",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 140,
+        "title": "Coin Problem #11",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You keep flipping a coin and whilst you do this you keep track of the number of Heads and the number of Tails. For example, if after 9 flips you have landed on Heads 7 times and Tails 2 times, then Heads is winning the race by 5. Now consider a race of 3 flips. What is the probability that the side you flip first will be losing the race?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.25",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 141,
+        "title": "Card Problem #4",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "Consider a shuffled deck of 52 cards. How many cards on average do you need to draw before you draw an Ace?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "13",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 142,
+        "title": "Dice Problem #10",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You keep rolling a dice and you keep track of 6 different sums: the sum of all the 1s, the sum of all the 2s, the sum of all the 3s, the sum of all the 4s, the sum of the 5s, and the sum of the 6s. The game ends once one of these exceeds 100. What is the expected value of the sum of all the dice that have been rolled?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "180.0",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 143,
+        "title": "Sum of Three 2-Digit Numbers",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "Three two-digit numbers are chosen at random. What is the probability that their sum is a three-digit number?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.9",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 144,
+        "title": "Dice Problem #11",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "What is the probability of rolling six dice and getting at least two pairs?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "0.7531",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 145,
+        "title": "No Common Numbers",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "You and your friend each input a machine that outputs random integers from 1 to 10 inclusive. You get three numbers and your friend gets three numbers. What is the probability that you have no numbers in common with your friend?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "7/24",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 146,
+        "title": "Coin Problem #12",
+        "source": "Optiver",
+        "tags": [ "Probability" ],
+        "description": "A particle is at the centre of a 10 by 10 grid. Each second, two coins are flipped in succession. The result of which stipulates which direction the particle will take a step of length 1 more: HH – North, HT – South, TH – West, TT – East. On average how many seconds will it take for the particle to hit the boundary of the grid?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "50",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 147,
+        "title": "Spiders, Chickens, and Cows",
+        "source": "SIG",
+        "tags": [ "Brain Teaser" ],
+        "description": "You walk into a barn and see spiders, chickens, and cows. There are 520 legs in total. The number of chickens is twice the number of cows, and the number of spiders is twice the number of chickens. Compute the number of spiders.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "52",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 148,
+        "title": "Seating Toddlers Logic Puzzle",
+        "source": "SIG",
+        "tags": [ "Brain Teaser" ],
+        "description": "You must seat five toddlers (Anna, Brian, Charlie, Dixie, Eva) at a round table subject to: (i) Anna won’t sit next to Brian or Eva; (ii) Brian won’t sit next to Charlie; (iii) Dixie won’t sit next to Eva or Charlie. If Dixie is sitting to the left of Anna, who is sitting to the left of Brian? (Choices: Dixie, Anna, Charlie, Eva.)",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "Eva",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 149,
+        "title": "Survey Conditional Probability",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "1,000 people were asked about their preferred method of exercise, grouped by age:\n\nRun: 18–22: 54, 23–27: 40, 28–32: 42, 33–37: 66, Total 202\n\nBike: 18–22: 77, 23–27: 68, 28–32: 90, 33–37: 70, Total 305\n\nSwim: 18–22: 28, 23–27: 43, 28–32: 50, 33–37: 52, Total 173\n\nOther: 18–22: 90, 23–27: 78, 28–32: 71, 33–37: 81, Total 320\n\nColumn totals: 18–22: 249, 23–27: 229, 28–32: 253, 33–37: 269, Grand total: 1000.\n\nYou meet a 33-year-old who took the survey. Compute the probability she prefers swimming.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "52/269",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 150,
+        "title": "Balanced Mobile System",
+        "source": "SIG",
+        "tags": [ "Brain Teaser" ],
+        "description": "A balanced mobile system weighs a total of 96 pounds. From the given figure, compute the weight (in pounds) of the green triangle.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "Figure not provided",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 151,
+        "title": "Factory Widget (Bayes Theorem)",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "Factory A makes 40% red widgets and 60% black widgets. Factory B makes 80% red widgets and 20% black widgets. One factory is chosen uniformly at random, and then two widgets are sampled uniformly at random from that factory. Both widgets are red. Compute the probability they were from Factory A. Give your answer as a simplified fraction.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1/5",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 152,
+        "title": "Dice Roll Expected Payoff",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "You roll a fair six-sided die twice. If the two rolls are different, you are paid the higher of the two rolls in dollars. If they are the same, you get $0. Compute your expected payoff, rounded to the nearest cent.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "3.89",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 153,
+        "title": "Bakery Muffin Sufficiency",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "In a bakery, each customer buys only one item. There is a 70% chance a customer buys a croissant and a 30% chance a customer buys a muffin. There are only 2 muffins left, and 5 people remain in line. Compute the probability that the two muffins are sufficient (i.e., no customer will want a muffin and find there are none left). Express your answer as a percentage to the nearest whole percent.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "84%",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 154,
+        "title": "Canoe Trip Timing",
+        "source": "SIG",
+        "tags": [ "Brain Teaser" ],
+        "description": "Two friends canoe upstream for 4 hours, realize their campsite is downstream, then paddle downstream for 5 hours. The next day, they canoe back to their original starting point 23 miles upstream and arrive at 16:00. The river flows at a constant 2 mph, and the friends always paddle at a constant rate. What time did they leave for their return trip? Answer in hh:mm.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "08:20",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 155,
+        "title": "Cats and Liars Puzzle",
+        "source": "SIG",
+        "tags": [ "Brain Teaser" ],
+        "description": "Asta, Bronya, and Clara each have different numbers of cats. They say: (i) Bronya to Clara: “You have the most cats.” (ii) Asta to Bronya: “I have exactly 30% more cats than you.” (iii) Asta to Clara: “The number of cats you have is the average of the number I have and the number Bronya has.” (iv) Clara to Asta: “You have at least 4 more cats than me.” When speaking to someone with fewer cats, the speaker tells the truth; when speaking to someone with more cats, the speaker lies. How many cats does Clara have?",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "23",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 156,
+        "title": "Arranging Cookies",
+        "source": "SIG",
+        "tags": [ "Math" ],
+        "description": "You baked 6 indistinguishable snickerdoodle cookies and 8 indistinguishable chocolate chip cookies. Compute the number of ways to arrange 7 of these cookies in a straight line.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "127",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 157,
+        "title": "Cat Jumping Contest",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "Three cats are competing in a jumping contest. The most athletic cat wins with probability 1/2, the least athletic cat wins with probability 1/6, and the remaining cat wins with probability 1/3. I picked a cat uniformly at random to cheer on, but it did not win. Compute the probability that I picked the most athletic cat. Express your answer as a simplified fraction.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "1/4",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 158,
+        "title": "Spinner Expected Spins",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "A spinner has three regions, and the probabilities of landing in each region are 1/6, 1/6, and 2/3. Compute the expected number of spins it would take to land in two distinct regions. Express your answer as a simplified fraction.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "17/5",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 159,
+        "title": "Blooming Flowers Overlap",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "A gardener is waiting for two favorite flowers to bloom. The purple flower blossoms at a time uniformly at random in the next 40 days and blooms for exactly 4 days. Independently, the red flower blossoms at a time uniformly at random in the next 40 days and blooms for exactly 16 days. Compute the probability that both flowers are simultaneously in bloom at some point. Express your answer as a simplified fraction.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "83/200",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 160,
+        "title": "4x4 Grid Puzzle (Skyscrapers)",
+        "source": "SIG",
+        "tags": [ "Brain Teaser" ],
+        "description": "In a 4×4 grid puzzle, place a building with 1, 2, 3, or 4 floors in each cell such that no two buildings in any row or column share the same number of floors. From each numbered clue outside the grid, the number of visible buildings (taller buildings block shorter ones behind them) equals that clue. Determine the numbers of floors in the cells labeled A and B, and report your answer as the two-digit integer AB.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "Figure not provided",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 161,
+        "title": "Expected Pairs in Card Hand",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "A deck contains ten cards: two 10s, two Jacks, two Queens, two Kings, and two Aces. You are dealt five cards without replacement. Compute the expected number of pairs in your hand. Express your answer as a simplified fraction.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "10/9",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 162,
+        "title": "Token Game (Gambler's Ruin)",
+        "source": "SIG",
+        "tags": [ "Probability" ],
+        "description": "You have 3 tokens and want to reach 5 tokens before running out. Each turn you bet as many tokens as possible, but not more than necessary to reach 5. You win each bet with probability 3/4. Compute the probability you reach 5 tokens before running out. Express your answer as a simplified fraction.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "219/247",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
+    },
+    {
+        "id": 163,
+        "title": "Frog Path (Consecutive Move Constraint)",
+        "source": "SIG",
+        "tags": [ "Math" ],
+        "description": "A frog travels from A(0, 0) to B(4, 6). Each step is either 1 unit up or 1 unit to the right, and the frog refuses to move three steps in the same direction consecutively. Compute the number of valid paths from A to B.",
+        "is_programming": false, "python_solution": "", "cpp_solution": "", "answer": "78",
+        "notes": "", "attempts": 0, "correct": 0, "is_saved": false
     }
 ]

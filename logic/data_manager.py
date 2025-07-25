@@ -87,3 +87,45 @@ def add_game_record(record):
     stats = load_game_stats()
     stats.append(record)
     save_game_stats(stats)
+
+def clear_game_stats():
+    """清空所有的游戏得分/历史记录"""
+    save_game_stats([]) # 直接保存一个空列表
+
+def reset_problem_practice_stats():
+    """重置所有题目的练习统计（尝试次数和正确次数），但不改变收藏状态"""
+    problems = load_problems()
+    for p in problems:
+        p['attempts'] = 0
+        p['correct'] = 0
+    save_problems(problems)
+
+
+def get_game_sessions():
+    """
+    加载所有游戏回合记录，并将它们按10个一组进行聚合。
+    返回一个包含每局游戏信息的列表。
+    """
+    stats = load_game_stats()
+    sessions = []
+    
+    # 每10个记录为一局
+    session_length = 10
+    for i in range(0, len(stats), session_length):
+        session_records = stats[i:i+session_length]
+        
+        # 确保这是一组完整的10局（或最后一组不完整的）
+        if not session_records:
+            continue
+            
+        total_score = sum(r.get("score", 0) for r in session_records)
+        # 使用这一局第一条记录的时间戳
+        timestamp = session_records[0].get("timestamp")
+        
+        sessions.append({
+            "timestamp": timestamp,
+            "total_score": total_score,
+            "num_rounds": len(session_records)
+        })
+        
+    return sessions
