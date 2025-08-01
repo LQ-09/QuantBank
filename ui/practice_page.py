@@ -77,19 +77,54 @@ class PracticePage(QWidget):
         self._update_save_button_text() # <-- 在这里也调用一次，处理初始状态
 
     def show_next_problem(self):
-        # ... (前面的逻辑不变) ...
+        # 1. 重置UI状态
+        self.set_initial_state()
+        self.user_answer_input.clear()
+        self.feedback_label.setText("")
+        self.solution_display.clear()
+        self.next_button.setText("下一题")
+
+        # 2. 加载和筛选题目
+        all_problems = load_problems()
+        if not all_problems:
+            self.problem_display.setText("<h1>题库为空，请先在编辑器中添加题目。</h1>")
+            self.current_problem = None
+            self._update_save_button_text() # 会禁用收藏按钮
+            self.next_button.setEnabled(False) # 禁用下一题按钮
+            return
+
+        self.next_button.setEnabled(True)
+
+        # 根据分类筛选题目
+        if self.current_category == "all":
+            filtered_problems = all_problems
+        elif self.current_category == "saved":
+            filtered_problems = [p for p in all_problems if p.get('is_saved', False)]
+        else: # 按标签筛选
+            filtered_problems = [p for p in all_problems if self.current_category in p.get('tags', [])]
+
+        if not filtered_problems:
+            self.problem_display.setText(f"<h1>分类 '{self.current_category}' 下没有题目。</h1>")
+            self.current_problem = None
+            self._update_save_button_text()
+            return
+
+        # 3. 选择并显示题目
         self.current_problem = random.choice(filtered_problems)
-        
-        # --- 【核心改动】转义数据 ---
         title = html.escape(self.current_problem.get('title', ''))
         company = html.escape(self.current_problem.get('source', ''))
         tags = html.escape(', '.join(self.current_problem.get('tags', [])))
         description = html.escape(self.current_problem.get('description', '')).replace('\n', '<br>')
-        
         html_desc = f"""<h3>{title}</h3><p><b>公司:</b> {company}</p><p><b>标签:</b> {tags}</p><hr><h3>描述</h3><p>{description}</p>"""
         self.problem_display.setHtml(html_desc)
-        
-        # ... (后面的逻辑不变) ...
+
+        # 4. 根据题目类型显示不同控件
+        is_programming = self.current_problem.get("is_programming", False)
+        self.answer_widget.setVisible(not is_programming)
+        self.self_assess_widget.setVisible(is_programming)
+
+        # 5. 更新收藏按钮状态
+        self._update_save_button_text()
 
     def show_solution(self):
         # ... (前面的逻辑不变) ...

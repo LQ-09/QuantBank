@@ -36,10 +36,10 @@ class PracticeMenuPage(QWidget):
         btn_back.setFixedSize(*button_size)
 
         # --- 【改动2】连接新按钮的信号 ---
-        btn_math.clicked.connect(lambda: self.startPracticeSession.emit("math"))
-        btn_prob.clicked.connect(lambda: self.startPracticeSession.emit("probability"))
-        btn_coding.clicked.connect(lambda: self.startPracticeSession.emit("coding"))
-        btn_finance.clicked.connect(lambda: self.startPracticeSession.emit("finance")) # <-- 新增连接
+        btn_math.clicked.connect(lambda: self.startPracticeSession.emit("Math"))
+        btn_prob.clicked.connect(lambda: self.startPracticeSession.emit("Probability"))
+        btn_coding.clicked.connect(lambda: self.startPracticeSession.emit("Coding"))
+        btn_finance.clicked.connect(lambda: self.startPracticeSession.emit("Finance"))
         btn_game.clicked.connect(self.navigateToGame.emit)
         btn_back.clicked.connect(self.navigateToWelcome.emit)
 
